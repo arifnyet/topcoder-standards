@@ -1,40 +1,25 @@
---- NOTES - REMOVE THIS SECTION  
-This document should be provided with your submission instead of any .txt or .doc files.
 
-Please rename this doc to "README.md" and provide it with your submission.
 
-If you need to use imagery, create a `docs` folder, put your screenshots or images in there, and link them like this:
-
-<img src="docs/img.jpg" />
-
---- END NOTES ---
-
-# Project Title Here
+# PGE RISK API SERVER
 Deployment Guide
 
 ### Description
 
 ## Prerequisites
 1. Node 4.x
-  1. NPM
-1. Grunt
-1. Bower
-1. SASS
+2. NPM
+
 
 
 ## Local Deployment
-```bash
-npm start
-```
+1. Install the application: `npm install`
+2. Configure config.json for server to db connection
+3. Configure config_seed.json for database population/creation
+4. Configure config_api.json for api key ONLY CHANGE THE VALUE PLEASE
+5. Create Database 
+`node create.js` (for populated database) /
+`node create-empty.js` (only business and industrial are populated)
+`node create-empty-all.js` (for empty database )
+6. Start the server: `npm start`
+7. Use postman extension/app to test the api. postman file is name postman-collection
 
-## Production Build and Installation
-How to build the application for upload to a server
-```bash
-Note: assume it is a dedicated server not AWS or Heroku.
-```
-
-### Manual Deployment Notes
-
-## Running Tests
-
-## Notes
